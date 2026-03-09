@@ -3,17 +3,27 @@ class Assets {
   Assets._();
 
   static const String configAppColors = 'lib/core/config/app_colors.dart';
+  static const String configAppConstants = 'lib/core/config/app_constants.dart';
   static const String configAppRoutes = 'lib/core/config/app_routes.dart';
   static const String configAppTheme = 'lib/core/config/app_theme.dart';
   static const String entitiesCategoryEntity = 'lib/features/home/domain/entities/category_entity.dart';
   static const String entitiesHabitEntity = 'lib/features/home/domain/entities/habit_entity.dart';
   static const String generatedAssets = 'lib/generated/assets.dart';
   static const String libMain = 'lib/main.dart';
+  static const String logicHabitCubit = 'lib/features/home/preseantation/logic/habit_cubit.dart';
+  static const String logicHabitState = 'lib/features/home/preseantation/logic/habit_state.dart';
   static const String modelsNavItem = 'lib/core/models/nav_item.dart';
-  static const String screensMainScreen = 'lib/core/screens/main_screen.dart';
   static const String viewsAddHabitView = 'lib/features/home/preseantation/views/add_habit_view.dart';
   static const String viewsHomeView = 'lib/features/home/preseantation/views/home_view.dart';
+  static const String widgetsAddViewHabitBody = 'lib/features/home/preseantation/widgets/add_view_habit_body.dart';
+  static const String widgetsCategoryContainer = 'lib/features/home/preseantation/widgets/category_container.dart';
   static const String widgetsContainerIcon = 'lib/features/home/preseantation/widgets/container_icon.dart';
   static const String widgetsCustomBottomNavbar = 'lib/core/widgets/custom_bottom_navbar.dart';
+  static const String widgetsCustomButton = 'lib/features/home/preseantation/widgets/custom_button.dart';
+  static const String widgetsCustomSnackBar = 'lib/core/widgets/custom_snack_bar.dart';
+  static const String widgetsCustomTextField = 'lib/features/home/preseantation/widgets/custom_text_field.dart';
+  static const String widgetsGreetingMessage = 'lib/features/home/preseantation/widgets/greeting_message.dart';
+  static const String widgetsHabitCard = 'lib/features/home/preseantation/widgets/habit_card.dart';
+  static const String widgetsHabitList = 'lib/features/home/preseantation/widgets/habit_list.dart';
 
 }

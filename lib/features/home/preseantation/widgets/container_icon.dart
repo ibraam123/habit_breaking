@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:habit_breaking/core/config/app_colors.dart';
 
 class ContainerIcon extends StatelessWidget {
   const ContainerIcon({super.key, required this.icon, this.size = 24.0 , this.isSelected = false});
@@ -9,17 +8,18 @@ class ContainerIcon extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     return Container(
       decoration: BoxDecoration(
         // make it circular
-        color: isSelected ? null : Colors.grey.withValues(alpha: 0.1),
+        color: isSelected ? null : theme.dividerColor.withValues(alpha: 0.1),
         borderRadius: BorderRadius.circular(
           size * 2
         ),
         gradient: isSelected ? LinearGradient(
           colors: [
-            AppColors.primary,
-            AppColors.secondary
+            theme.colorScheme.primary,
+            theme.colorScheme.secondary
           ],
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
@@ -27,7 +27,7 @@ class ContainerIcon extends StatelessWidget {
       ),
       child: Padding(
         padding: const EdgeInsets.all(16),
-        child: isSelected ? Icon(icon, color: Colors.white, size: size) : Icon(icon, color: Colors.blueGrey, size: size) ,
+        child: isSelected ? Icon(icon, color: Colors.white, size: size) : Icon(icon, color: theme.iconTheme.color, size: size) ,
       ),
     );
   }

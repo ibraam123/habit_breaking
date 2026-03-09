@@ -1,21 +1,21 @@
 import 'package:go_router/go_router.dart';
 import 'package:habit_breaking/features/home/preseantation/views/add_habit_view.dart';
+import 'package:habit_breaking/features/home/preseantation/views/home_view.dart';
 
-import '../screens/main_screen.dart';
 
 class AppRoutes {
 
 
-  static const String kMain = '/';
+  static const String kHome = '/';
   static const String kAddHabit = '/addHabit';
 
   static final GoRouter router = GoRouter(
-    initialLocation: kMain,
+    initialLocation: kHome,
     debugLogDiagnostics: true,
     routes: <GoRoute>[
       GoRoute(
-        path: kMain,
-        builder: (context, state) => const MainScreen(),
+        path: kHome,
+        builder: (context, state) => const HomeView(),
       ),
       GoRoute(
         path: kAddHabit,
